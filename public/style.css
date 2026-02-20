@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* ! WEBSITE SETTINGS */
+/* ! WEBSITE SETUP */
 
 *,html{
     margin: 0 ;
@@ -15,41 +15,31 @@
     text-decoration: none;
 }
 :root {
-    --Warnasatu : #e47b14;
-    --Warnadua : #0493dc;
-    --Warnatiga : #667BC6;
-    --Warnaempat : #E2DFD0;
-    --Warnalima:#EEE4B1;
-    --Fontsatu : sans-serif;
-    --fontdua : "Roboto";
-    --fonttiga : "Montserrat";
-    --fontempat : "Poppins";
-    --warnaenam : #F5F5F7;
-    --Warnatujuh:#0C0C0C;
-    --Warnadelapan:#F8FAE5;
+    --Primary : #e47b14;
+    --Secondary : #0493dc;
+    --Text-color: rgb(255, 255, 255);
+    --Primary-font : sans-serif;
+    --Secondary-font : "Roboto";
+    --Third-font : "Montserrat";
+    --Fourth-font : "Poppins";
+    --Addition-color-one : #F5F5F7;
 }
 
 img {
-   width: 400px;
+    width: 400px;
 }
-
-
-/* ! END WEBSITE SETTINGS */
-
 
 /* ! NAVIGATION BAR STYLE */
 
 .logo h1 {
-    color: var(--Warnasatu);
-    font-size: 35px;
-    font-style: italic;
-    font-family: var(--fonttiga); 
-    text-shadow: 0 0 4px #F39F5A;
+    color: var(--Text-color);
+    font-size: 30px;
+    font-family: var(--Third-font); 
     margin-left: 10px;
 }  
 
 nav {
-    background-color: var(--Warnadua);
+    background-color: var(--Secondary);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +59,7 @@ nav ul {
 nav ul li a {
     font-family: sans-serif;
     text-decoration: none;
-    color: var(--Warnalima);
+    color: var(--Text-color);
     font-weight: 700;
     font-size: 19px;
     transition: all;
@@ -77,7 +67,7 @@ nav ul li a {
     
 }
 nav ul li a:hover {
-    color: var(--Warnasatu);
+    color: var(--Primary);
     transition: 0.4s ease-in-out;
 }
 
@@ -86,15 +76,14 @@ nav ul li a:hover {
     font-size: 38px;
     display: none;
     color: white;
-  }
-/* ! END NAVIGATION BAR STYLE */
+}
 
 
 /*! HERO SECTION STYLE*/
 
 .hero-section h1 {
-    color: var(--Warnadua);
-    font-family: var(--fonttiga);
+    color: var(--Secondary);
+    font-family: var(--Third-font);
     font-size: 40px;
     margin-top: 100px;
     font-weight: 700;
@@ -102,8 +91,8 @@ nav ul li a:hover {
 
 }
 .hero-section h2 {
-    color: var(--Warnasatu);
-    font-family: var(--fonttiga);
+    color: var(--Primary);
+    font-family: var(--Third-font);
     font-size : 25px;
     margin-top: 15px;
     font-weight: 600;
@@ -119,26 +108,23 @@ nav ul li a:hover {
     width: 500px;
 }
 
-
-/* ! END HERO SECTION STYLE*/
-
-
 /* ! SECTION KEGIATAN STYLE */
 .section-kegiatan {
-    background-color: var(--Warnasatu);
-    
+    background-color: var(--Primary);
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 .kegiatan-title h1 {
-    color: var(--Warnaempat);
-    font-family: var(--fonttiga);
+    color: var(--Text-color);
+    font-family: var(--Third-font);
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
     padding-top: 25px;
 }
 .img-desc p {
-    font-family: var(--fontempat);
-    color: var(--Warnalima);
+    font-family: var(--Fourth-font);
+    color: var(--Text-color);
     font-size: 20px;
     padding-top: 20px;
 }
@@ -155,15 +141,15 @@ nav ul li a:hover {
 }
 
 
-/* ! END SECTION KEGIATAN STYLE */
-
 /* ! SECTION GURU STYLE */
 .section-guru {
-    background-color: var(--Warnadua);
+    background-color: var(--Secondary);
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 .guru-title h1 {
-    color: var(--Warnaempat);
-    font-family: var(--fonttiga);
+    color: var(--Text-color);
+    font-family: var(--Third-font);
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
@@ -178,7 +164,7 @@ nav ul li a:hover {
 .itemsone {
     margin: 30px  ;
     background-size: cover;
-    background-color: var(--Warnasatu);
+    background-color: var(--Primary);
     border-radius: 20px;
 }
 .itemsone img {
@@ -188,27 +174,28 @@ nav ul li a:hover {
 }
 .itemsone h1 {
     text-align: center;
-    font-family: var(--fonttiga);
-    color: var(--warnaenam);
+    font-family: var(--Third-font);
+    color: var(--Addition-color-one);
     padding-top: 10px;
 }
 .itemsone h2 {
     text-align: center;
-    font-family: var(--fonttiga);   
+    font-family: var(--Third-font);   
     font-size: 19px;         
-    color: var(--warnaenam);
+    color: var(--Addition-color-one);
     padding-bottom: 10px;
 }
 
-/* ! END SECTION GURU STYLE */
 
 /* ! SECTION FASILITAS STYLE */
 .section-fasilitas {
-    background-color: var(--Warnasatu);
+    background-color: var(--Primary);
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 .fasilitas-title h1 {
-    color: var(--Warnaempat);
-    font-family: var(--fonttiga);
+    color: var(--Text-color);
+    font-family: var(--Third-font);
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
@@ -222,7 +209,7 @@ nav ul li a:hover {
 .itemstwo {
     margin: 30px  ;
     background-size: cover;
-    background-color: var(--Warnadua);
+    background-color: var(--Secondary);
     border-radius: 20px;
 }
 .itemstwo img {
@@ -232,22 +219,22 @@ nav ul li a:hover {
 }
 .itemstwo h1 {
     text-align: center;
-    font-family: var(--fonttiga);
-    color: var(--warnaenam);
+    font-family: var(--Third-font);
+    color: var(--Addition-color-one);
     padding-top: 10px;
     padding-bottom: 10px;
 }
-/* ! END SECTION FASILITAS STYLE */
 
 
 /* ! SECTION KONTAK STYLE */
 .section-kontak {
-    background-color: var(--Warnadua);
-   
+    background-color: var(--Secondary);
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 .kontak-title h1 {
-    color: var(--Warnaempat);
-    font-family: var(--fonttiga);
+    color: var(--Text-color);
+    font-family: var(--Third-font);
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
@@ -258,7 +245,6 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     display: flex;
-    padding-bottom: 30px;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -270,7 +256,7 @@ nav ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    background-color: #F39F5A;
+    background-color: var(--Primary);
     border-radius: 20px;
 }
 .left-kontak iframe {
@@ -286,32 +272,31 @@ input {
     width: 100%;
     border: 2px solid rgba(0,0,0,0);
     outline: none;
-    background-color: var(--Warnalima);
+    background-color: var(--Text-color);
     padding: 7px ;
     margin-bottom: 7px;
     border-radius: 5px;
     transition: .3s ;
-    font-size: 19px;
-    font-family: var(--Fontsatu);
+    font-size: 17px;
+    font-family: var(--Primary-font);
 }
 input:hover {
     background-color: #E2DFD0;
 }
 textarea {
-    background-color: var(--Warnalima);
+    background-color: var(--Text-color);
     height: 250px;
-    width: 103%;
+    width: 102%;
     outline: none;
     border-radius: 5px ;
     transition: .3s;
     text-align: start;
-    padding-left: 5px;
+    padding: 5px;
     font-size: 17px;
-    font-family: var(--Fontsatu);
+    font-family: var(--Primary-font);
 }
 textarea:hover {
     background-color: #E2DFD0;
-   
 }
 button {
     width: 105%;
@@ -320,21 +305,21 @@ button {
     border-radius: 15px;
     margin-top: 5px;
     transition: .3s;
-    background-color: var(--Warnalima);
+    background-color: var(--Text-color);
     font-size: 17px;
-    font-family: var(--fonttiga);
+    font-family: var(--Third-font);
     font-weight: 600;
 } 
 button:hover {
-    background-color: #E2DFD0;
+    background-color: var(--Secondary);
+    color: var(--Text-color);
 }
-/* ! END SECTION KONTAK STYLE */
 
 /* ! FOOTER STYLE */
 .down {
     bottom:0;
     box-sizing: border-box;
-    background-color: var(--Warnatujuh);
+    background-color: var(--Primary);
     height: 120px;
     padding:35px 50px 60px 50px;
 
@@ -342,22 +327,23 @@ button:hover {
 
 .down p {
     text-align: center;
-    font-family: var(--fonttiga) ;
+    font-family: var(--Third-font) ;
     font-size: 19px;         
     font-weight: 400;     
     margin-top: 15px;                                                          
-    color: var(--Warnadelapan);
+    color: var(--Text-color);
 }
 
-/* ! END FOOTER STYLE */
 
 /** Responsive for portrait mobile */
 @media screen and (min-width : 360px ) and (max-width: 460px) {
     .logo h1 {
-        font-size: 23px;
+        display: none;
     }
   nav {
-    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     position: fixed;
     top: 0;
    
@@ -370,11 +356,15 @@ button:hover {
         width: 100%;
         padding-bottom: 20px;
         padding-top: 20px;
-        background-color: var(--Warnadua);
+        background-color: var(--Secondary);
         flex-direction: column;
         text-align: center;
         gap: 30px;
-       
+        list-style: none;
+        opacity: 1;
+        max-height: 500px;
+        transition: all 170ms ease-in-out;
+        overflow: hidden;
     }
     nav ul li a {
         font-size: 20px;
@@ -402,16 +392,18 @@ button:hover {
 
     .icon {
         display: block;
-        margin-right: 20px;
+        width: fit-content;
+        margin-left: 20px;
+        margin-right: auto;
         font-size: 30px;
-        transition: .3s;
     }
     .icon:hover {
         color: #e47b14;
     }
     nav ul.hidden {
-        display: none;
-    }
+        opacity: 0;
+        height: 0;    
+    }   
     /* Responsive  hero section */
 
     /* Responsive section guru */
@@ -431,41 +423,37 @@ button:hover {
         margin: 7px;
     }
 
+    .left-kontak iframe {
+        border-radius: 0px;
+    }
+
      .wrap-kontak {
         grid-template-columns: 1fr;
+        border-radius: 0px;
      }
      .left-kontak iframe {
         padding: 0;
      }
      input {
-        width: 110%;
         height: 30px;
         font-size: 20px;
-        margin-left: -25px;
      }
      textarea {
-        width: 112%;
-        margin-left: -25px;
         font-size: 17px;
      }
      button {
         font-size: 17px;
-        width:114%;
-        margin-left: -25px;
         font-weight: 600;
      }
      
        /* Responsive section kontak */
 
-  
-
-
 }
-/** Responsive for mobile */
+
 
 /* Responsive for tablet */
 @media screen and (min-width:568px ) and (max-width: 896px){   
-    
+
     nav {
         height: 60px;
         position: fixed;
@@ -480,7 +468,7 @@ button:hover {
             width: 100%;
             padding-bottom: 20px;
             padding-top: 20px;
-            background-color: var(--Warnadua);
+            background-color: var(--Secondary);
             flex-direction: column;
             text-align: center;
             gap: 30px;
@@ -501,6 +489,7 @@ button:hover {
         }
         nav ul.hidden {
             display: none;
+            overflow: hidden;
         }
         .main-wrap {
             display: flex;
