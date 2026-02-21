@@ -1,6 +1,6 @@
 <h1 align="center"> Software Engineering Major Landing Page (Static Website)</h1>
 
-The landing page or called static website that has simple design concept and prioritize responsive web design and also mainly containing Software Engineering Major profile.
+<p align="center">The landing page or called static website that has simple design concept and prioritize responsive web design and also mainly containing Software Engineering Major profile.</p>
 
 <h2> Tech Stack </h2>
 
