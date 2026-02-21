@@ -23,19 +23,27 @@
     --Third-font : "Montserrat";
     --Fourth-font : "Poppins";
     --Addition-color-one : #F5F5F7;
+    --Dark-navbar-rgba : rgba(1, 29, 43, 0.7);
+    --Dark-navbar-hex : #011D2B;
+}
+span {
+    color: var(--Secondary);
 }
 
 img {
     width: 400px;
 }
+.titleimg {
+    font-weight: 800;
+}
 
 /* ! NAVIGATION BAR STYLE */
 
 .logo h1 {
-    color: var(--Text-color);
+    color: var(--Primary);
     font-size: 30px;
     font-family: var(--Third-font); 
-    margin-left: 10px;
+    margin-right: 10px;
 }  
 
 nav {
@@ -48,12 +56,16 @@ nav {
     width: 100%;
     height: 70px;
     z-index: 1000;
+    background: var(--Dark-navbar-rgba);
+    backdrop-filter: blur(15px) brightness(0.8);
+    -webkit-backdrop-filter: blur(15px) brightness(0.8);
 }
+
 nav ul {
     display: flex;
     align-items: center;
     gap : 30px;
-    margin-right: 20px;
+    margin-left: 20px;
     list-style: none;
 }
 nav ul li a {
@@ -62,13 +74,10 @@ nav ul li a {
     color: var(--Text-color);
     font-weight: 700;
     font-size: 19px;
-    transition: all;
-    transition-duration: 300ms;
-    
 }
 nav ul li a:hover {
     color: var(--Primary);
-    transition: 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .icon  {
@@ -159,7 +168,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 .itemsone {
     margin: 30px  ;
@@ -207,7 +215,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 .itemstwo {
-    margin: 30px  ;
+    margin: 30px;
     background-size: cover;
     background-color: var(--Secondary);
     border-radius: 20px;
@@ -215,7 +223,7 @@ nav ul li a:hover {
 .itemstwo img {
     width: 350px;
     border-radius: 20px 20px 0px 0px;
-   
+
 }
 .itemstwo h1 {
     text-align: center;
@@ -248,6 +256,7 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .wrap-kontak {
     max-width: 860px;
@@ -260,7 +269,7 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 .left-kontak iframe {
-    padding: 10px 10px  10px ;
+    padding: 10px 10px 10px ;
     width: 100%;
     height: 470px ;
     border-radius: 25px;
@@ -321,16 +330,19 @@ button:hover {
     box-sizing: border-box;
     background-color: var(--Primary);
     height: 120px;
-    padding:35px 50px 60px 50px;
-
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .down p {
-    text-align: center;
+    /* text-align: center; */
     font-family: var(--Third-font) ;
     font-size: 19px;         
     font-weight: 400;     
-    margin-top: 15px;                                                          
+    margin-top: 15px;
+    margin-bottom: 15px;                                                          
     color: var(--Text-color);
 }
 
@@ -340,23 +352,30 @@ button:hover {
     .logo h1 {
         display: none;
     }
-  nav {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    position: fixed;
-    top: 0;
-   
-  }
-    nav ul {
+    nav {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: var(--Dark-navbar-hex);
+    }
+
+    #list-nav {
+        margin-top: 3.5em;
+        background: var(--Dark-navbar-rgba);
+        backdrop-filter: blur(15px) brightness(0.8);
+        width: 100%;
+        -webkit-backdrop-filter: blur(15px) brightness(0.8);
         position: absolute;
         top: 13px;
-        left: 0;
-        margin-top: 35px;
-        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav ul {
         padding-bottom: 20px;
         padding-top: 20px;
-        background-color: var(--Secondary);
+        /* background-color: var(--Dark-navbar-hex); */
         flex-direction: column;
         text-align: center;
         gap: 30px;
@@ -368,10 +387,12 @@ button:hover {
     }
     nav ul li a {
         font-size: 20px;
-      
     }
     /* Responsive hero section */
-   
+    .hero-section {
+        padding: 0 20px;
+    }
+
     .hero-section h1 {
         margin-top: 105px;
         font-size: 35px;
@@ -383,11 +404,7 @@ button:hover {
     }
     .hero-sectionlogo img {
         margin-bottom: 20%;
-        width: 420px;
-    }
-    .itemsone {
-        margin-top: 2px;
-        margin-left: 42px;
+        width: 360px;
     }
 
     .icon {
@@ -406,7 +423,7 @@ button:hover {
     }   
     /* Responsive  hero section */
 
-    /* Responsive section guru */
+    /* Responsive section kegiatan */
     .section-kegiatan {
         width: 100%;
     }
@@ -416,71 +433,92 @@ button:hover {
         justify-content: center;
     }
     .main-wrap img {
-       width: 400px;
+        width: 300px;
     }
     .img-desc p {
         font-size: 19px;
         margin: 7px;
     }
 
-    .left-kontak iframe {
-        border-radius: 0px;
-    }
-
-     .wrap-kontak {
+    .wrap-kontak {
         grid-template-columns: 1fr;
         border-radius: 0px;
-     }
-     .left-kontak iframe {
+    }
+    .left-kontak iframe {
         padding: 0;
-     }
-     input {
-        height: 30px;
-        font-size: 20px;
-     }
-     textarea {
+        width: 100%;
+        border-radius: 0;
+    }
+    .right-kontak input, 
+    .right-kontak textarea, 
+    .right-kontak button {
+        width: 100%;            
+        max-width: 100%;        
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box;
+    }
+
+    input {
+        height: 50px;
+        padding: 20px ;
         font-size: 17px;
-     }
-     button {
+    }
+    textarea {
+        padding: 20px;
         font-size: 17px;
+    }
+    button {
+        font-size: 15px;
         font-weight: 600;
-     }
-     
+    }
+    .down p {
+        font-size: 17px;
+    }
+    .itemsone img {
+        width: 320px;
+    
+    }
+    .itemstwo img {
+        width: 320px;
+    }
        /* Responsive section kontak */
-
 }
-
 
 /* Responsive for tablet */
 @media screen and (min-width:568px ) and (max-width: 896px){   
+    .hero-section h2 {
+        font-size: 30px;
+    }
 
     nav {
         height: 60px;
         position: fixed;
         top: 0;
-       
-      }
+        background-color: var(--Dark-navbar-hex);
+    }
         nav ul {
             position: absolute;
             top: 13px;
             left: 0;
+            margin-left: 0px;
             margin-top: 35px;
             width: 100%;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            background-color: var(--Secondary);
+            padding-bottom: 50px;
+            padding-top: 50px;
+            background-color: var(--Dark-navbar-rgba);
             flex-direction: column;
             text-align: center;
             gap: 30px;
-           
+            transition: all 170ms ease-in-out;
+            overflow: hidden;
         }
         nav ul li a {
             font-size: 20px;
-          
         }
         .icon {
             display: block;
-            margin-right: 20px;
+            margin-left: 20px;
             font-size: 30px;
             transition: .3s;
         }
@@ -488,8 +526,8 @@ button:hover {
             color: #e47b14;
         }
         nav ul.hidden {
-            display: none;
-            overflow: hidden;
+            opacity: 0;
+            height: 0;    
         }
         .main-wrap {
             display: flex;
@@ -500,7 +538,10 @@ button:hover {
             width: 700px;
         }
         .img-desc p {
-            margin: 5px;
+            margin: 5px 10px 10px;
+        }
+        .wrap-kontak {
+            border-radius: 0px;
         }
 }
 
@@ -512,7 +553,7 @@ button:hover {
 } 
 
 @media screen and (min-width:1210px) and (max-width:1300px) {
-   
+
 }
 
 @media screen and (min-width : 1367px ) and (max-width: 1920px) {

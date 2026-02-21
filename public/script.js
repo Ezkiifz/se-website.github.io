@@ -9,5 +9,5 @@ const listNav = document.getElementById("list-nav");
 
 Icon.addEventListener('click',() => {
     listNav.classList.toggle("hidden");
+    listNav.classList.add('navscroll')
 });
-
