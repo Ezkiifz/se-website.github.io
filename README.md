@@ -8,7 +8,7 @@
 
 <h2> Tools </h2>
 
-<img src="https://skillicons.dev/icons?i=git" />
+<img src="https://skillicons.dev/icons?i=git,vscode" />
 
 <h2> Preview </h2>
 
