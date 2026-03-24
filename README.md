@@ -12,6 +12,6 @@
 
 <h2> Preview </h2>
 
-<img style="border-radius:45px" src="img/Preview-1.png" />
-<img style="border-radius:45px" src="img/Preview-2.png" />
+<img style="border-radius:45px" src="assets/img/Preview-1.png" />
+<img style="border-radius:45px" src="assets/img/Preview-2.png" />
 
