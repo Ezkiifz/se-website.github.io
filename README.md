@@ -14,6 +14,7 @@
 
 
 <h2> Preview </h2>
+[Web Preview](https://ezkiifz.github.io/se-website.github.io/) 
 
 <img src="assets/img/Preview-1.png" />
 <img src="assets/img/Preview-2.png" />
