@@ -10,6 +10,9 @@
 
 <img src="https://skillicons.dev/icons?i=git,vscode" />
 
+[Formspree](https://formspree.io/) – form handling service for the contact form
+
+
 <h2> Preview </h2>
 
 <img src="assets/img/Preview-1.png" />
